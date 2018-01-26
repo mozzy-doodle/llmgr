@@ -13,6 +13,11 @@ import { Subscription } from 'rxjs/Subscription';
   styleUrls: ['app.component.css'],
   template: `
     <div>
+      <nav class="navbar sticky-top navbar-light bg-light">
+        <a class="navbar-brand" routerLink="property">Properties</a>
+        <a class="navbar-brand" href="#">Tenants</a>
+        <a class="navbar-brand" href="#">Finances</a>
+      </nav>
       <div class="wrapper container-fluid">
         <router-outlet></router-outlet>
       </div>
