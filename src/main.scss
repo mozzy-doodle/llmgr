@@ -1,0 +1,68 @@
+$brand-primary: #008C8C;
+$brand-secondary: #e5f4fe;
+$brand-tertiary: #03f2f5;
+
+$font-small: 14px;
+$font-medium: 18px;
+$font-large: 24px;
+
+#logo {
+  font-family: "Helvetica Neue";
+}
+
+h2 {
+  padding-left: 15px;
+}
+
+.nav {
+  font-weight: 500;
+}
+
+.nav-stacked  {
+  li a {
+    background-color: transparent;
+    color: $brand-primary;
+  }
+  li:active {
+    font-weight: 700;
+    font-size: $font-medium;
+  }
+}
+
+.btn {
+  padding: 15px;
+  border-radius: 0;
+}
+
+.btn-row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.btn-primary {
+  background-color: $brand-primary;
+}
+
+.modal-header, .modal-footer {
+  border-radius: 0;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+select.form-control {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'><path fill='#444' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'></path></svg>");
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+}
+
+.list-group-item {
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 0px;
+  border: 1px solid darken($brand-primary, 15%);
+}

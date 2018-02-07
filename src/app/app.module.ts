@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
+import { HttpClientModule } from '@angular/common/http';
+
 // third-party modules
 import { AngularFireModule, FirebaseAppConfig } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
@@ -42,13 +44,14 @@ export const firebaseConfig: FirebaseAppConfig = {
 
 @NgModule({
   imports: [
-    BrowserModule,
+  BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot(ROUTES),
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule,
     AngularFireDatabaseModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    HttpClientModule
   ],
   declarations: [
     AppComponent,

@@ -1,0 +1,9 @@
+@import '../../../main.scss';
+
+nav {
+  background-color: $brand-primary;
+  border-radius: 0;
+  a { color: #efefef; }
+  a:hover { color: #fff }
+}
+

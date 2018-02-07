@@ -10,10 +10,11 @@ import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'app-root',
-  styleUrls: ['app.component.css'],
+  styleUrls: ['app.component.scss'],
   template: `
     <div>
       <nav class="navbar sticky-top navbar-light bg-light">
+        <a class="navbar-brand" id="logo">RENT GUSTO</a>
         <a class="navbar-brand" routerLink="property">Properties</a>
         <a class="navbar-brand" href="#">Tenants</a>
         <a class="navbar-brand" href="#">Finances</a>
